@@ -68,12 +68,25 @@ function esVocal(letra) {
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
    if ( letra.length > 1 ){
-     return "Dato incorrecto" 
-   } else if (letra == "A", "a","E","e","I","i","O","o","U","u"){
-      return "Es vocal"
-   }else return "Dato incorrecto" 
-}
+     return "Dato incorrecto" ;
+   } 
+   else {
+      switch(letra){
+      case "a":
+      case "e":
+      case "i":
+      case "o":  
+      case "u": 
+      return "Es vocal";
+      break;
+      default:
+         return "Dato incorrecto";
+      }
+   }
+   }
 
+      
+   
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    esPositivo,
